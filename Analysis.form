@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Analysis">
+  <grid id="27dc6" binding="Analysis" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="560" height="541"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="a2f" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="1" column="1" row-span="3" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none" title="List Properties" title-justification="2"/>
+        <children>
+          <component id="a1000" class="javax.swing.JRadioButton" binding="InOrderRadio">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="InOrder"/>
+              <toolTipText value="Ascending list"/>
+            </properties>
+          </component>
+          <component id="9e7ed" class="javax.swing.JRadioButton" binding="ReverseOrderRadio">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="ReverseOrder"/>
+              <toolTipText value="Descending list"/>
+            </properties>
+          </component>
+          <component id="291c3" class="javax.swing.JRadioButton" binding="RandomOrderRadio">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="true"/>
+              <selected value="true"/>
+              <text value="Random"/>
+              <toolTipText value="100% random list"/>
+            </properties>
+          </component>
+          <component id="1f418" class="javax.swing.JRadioButton" binding="AlmostOrderRadio">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="AlmostOrder"/>
+              <toolTipText value="50% ascending 50% random"/>
+            </properties>
+          </component>
+          <component id="91b91" class="javax.swing.JSlider" binding="SizeSlider">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <maximum value="50000"/>
+              <minimum value="1"/>
+              <toolTipText value="Slider range 1-50k"/>
+            </properties>
+          </component>
+          <component id="c0f22" class="javax.swing.JButton" binding="CreateButton">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Create The List"/>
+              <toolTipText value="Press to run agorithm with current settings"/>
+            </properties>
+          </component>
+          <hspacer id="14223">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="2f1f7" class="javax.swing.JTextField" binding="SizeField">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="0"/>
+              <requestFocusEnabled value="true"/>
+              <text value="1"/>
+              <toolTipText value="Can type number here directly"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="ecf20" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <name value=""/>
+          <toolTipText value=""/>
+        </properties>
+        <border type="none" title="Chosen Algorithm" title-justification="2"/>
+        <children>
+          <component id="fb839" class="javax.swing.JTextField" binding="SortChoice">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="0"/>
+              <text value="Insertion Sort"/>
+              <toolTipText value="The currently selected sorting "/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="c223" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="etched" title="Experimental Results" title-justification="2"/>
+        <children>
+          <component id="81906" class="javax.swing.JTextField" binding="MovementField">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+              <toolTipText value="Number of movements"/>
+            </properties>
+          </component>
+          <component id="dd558" class="javax.swing.JTextField" binding="TimeField">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <toolTipText value="Time in milliseconds"/>
+            </properties>
+          </component>
+          <component id="8745d" class="javax.swing.JTextField" binding="CompareField">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+              <toolTipText value="Number of comparisons"/>
+            </properties>
+          </component>
+          <component id="731fe" class="javax.swing.JTextField" binding="SortField">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <toolTipText value="Sorting algorithm"/>
+            </properties>
+          </component>
+          <component id="82d50" class="javax.swing.JTextField" binding="DatatypeField">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <toolTipText value="The property of the list"/>
+            </properties>
+          </component>
+          <component id="2fd73" class="javax.swing.JTextField" binding="NumberField">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <toolTipText value="Number of elements"/>
+            </properties>
+          </component>
+          <component id="fb3f0" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="N:"/>
+              <toolTipText value="Number of elements"/>
+            </properties>
+          </component>
+          <component id="fb8ee" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="DataType:"/>
+              <toolTipText value="The property of the list"/>
+            </properties>
+          </component>
+          <component id="99ff7" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Sort:"/>
+              <toolTipText value="Sorting algorithm"/>
+            </properties>
+          </component>
+          <component id="4d08a" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Comparisons:"/>
+              <toolTipText value="Number of comparisons"/>
+            </properties>
+          </component>
+          <component id="73662" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Movements:"/>
+              <toolTipText value="Number of movements"/>
+            </properties>
+          </component>
+          <component id="a007" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Total Time:"/>
+              <toolTipText value="Time in milliseconds"/>
+            </properties>
+          </component>
+          <component id="e0110" class="javax.swing.JTextField" binding="TimeComField">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <toolTipText value="Time Complexity"/>
+            </properties>
+          </component>
+          <component id="ce856" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Time Complexity:"/>
+              <toolTipText value="Time Complexity"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="78fa0" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="0" column="0" row-span="5" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="5364a" class="javax.swing.JButton" binding="mergeSortButton" default-binding="true">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Merge Sort"/>
+              <toolTipText value="Merge Sort"/>
+            </properties>
+          </component>
+          <component id="9ba87" class="javax.swing.JButton" binding="insertionSortButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Insertion Sort"/>
+              <toolTipText value="Insertion Sort"/>
+            </properties>
+          </component>
+          <component id="e5093" class="javax.swing.JButton" binding="quickSortButton" default-binding="true">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Quick Sort"/>
+              <toolTipText value="Quick Sort"/>
+            </properties>
+          </component>
+          <component id="be9b8" class="javax.swing.JButton" binding="selectionSortButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Selection Sort"/>
+              <toolTipText value="Selection Sort"/>
+            </properties>
+          </component>
+          <component id="bb9c0" class="javax.swing.JButton" binding="heapSortButton" default-binding="true">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Heap Sort"/>
+              <toolTipText value="Heap Sort"/>
+            </properties>
+          </component>
+          <component id="814b" class="javax.swing.JButton" binding="radixSortButton" default-binding="true">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Radix Sort"/>
+              <toolTipText value="Radix Sort"/>
+            </properties>
+          </component>
+          <component id="64587" class="javax.swing.JButton" binding="bubbleSortButton">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Bubble Sort"/>
+              <toolTipText value="Bubble Sort"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="Order">
+      <member id="9e7ed"/>
+      <member id="9e7ed"/>
+      <member id="291c3"/>
+      <member id="a1000"/>
+      <member id="1f418"/>
+    </group>
+  </buttonGroups>
+</form>
